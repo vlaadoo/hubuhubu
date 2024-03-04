@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=hububum_db'
+      - 'POSTGRES_PASSWORD=hubupass'
+      - 'POSTGRES_USER=hububadmin'
+    ports:
+      - "5432:5432"
